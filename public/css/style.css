@@ -1,3 +1,6 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
 body{
 	background-color: #c9c9c9;
 	width: 95%;
@@ -49,7 +52,6 @@ table tr td{
 	display: block;
 	margin: 0px auto;
 	margin-bottom: 25px; 
-	margin-top: 25px;
 	border-radius: 5px;
 	font-size: 25px;
 }
@@ -96,18 +98,26 @@ table tr td{
 }
 
 .months{
-	font-size: 50px;
-	color: blue;
-	padding-left: 4%; 
-	border-left: 2px solid black;
-	border-bottom: 2px solid black;
+  	font-family: Open Sans Condensed, sans-serif;
+  	font-weight: normal;
+  	font-size: 50px;
+  	color: #069;
+  	border-bottom: 1px solid grey; 
 }
 
-.days{
-	font-size: 35px;
-	display: inline;
-	color: blue;
+.days {
+  	font-family: Open Sans Condensed, sans-serif;
+  	font-weight: normal;
+  	font-size: 35px;
+  	color: #069;
+  	margin-bottom: 0;
+}
 
+.days ~ p {    /* only applies to p-elements on the main page */
+    margin: 0;
+    position: relative;
+    top: -40px;     /* move person names to line up with the day number */
+    left: 50px;     /* make sure the person names don't overlap the day number */
 }
 
 #redButton{
